@@ -1,6 +1,6 @@
 {
-  "name": "Freepal Coin List",
-  "timestamp": "2025-07-21T12:00:00Z",
+  "name": "Freepal Coin Token List",
+  "timestamp": "2025-07-21T00:00:00+00:00",
   "version": {
     "major": 1,
     "minor": 0,
@@ -9,11 +9,11 @@
   "tokens": [
     {
       "chainId": 137,
-      "address": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
+      "address": "0x4551d27fCCDa6985bbb6457b83b487c2d38fC9e5",
       "name": "Freepal Coin",
       "symbol": "FPC",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/faktinyaid/freepalcoin/main/logo.png"
+      "logoURI": "https://faktinya.github.io/freepalcoin/logo.png"
     }
   ]
 }
