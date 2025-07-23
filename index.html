@@ -6,43 +6,99 @@
   <title>Freepal Coin (FPC)</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      text-align: center;
-      padding: 30px;
+      background-color: #ffffff;
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: #fff;
+
+    header {
+      background: linear-gradient(90deg, #e60000, #000000, #007a3d);
+      color: white;
       padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #f3f3f3;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    a {
+
+    h1 {
+      color: #e60000;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    a.button {
       display: inline-block;
       margin: 10px;
       padding: 12px 20px;
-      background-color: #00aa88;
+      background-color: #007a3d;
       color: #fff;
       text-decoration: none;
       border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    a:hover {
-      background-color: #00775a;
+
+    a.button:hover {
+      background-color: #005a2d;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 10px;
+      text-align: center;
+      background-color: #000;
+      color: white;
+      font-size: 14px;
+    }
+
+    .donation {
+      background-color: #ffffff;
+      padding: 15px;
+      border: 2px dashed #e60000;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>🔥 Freepal Coin (FPC)</h1>
-    <p>1 FPC = 1 USD</p>
-    <a href="whitepaper_freepal_coin.pdf" target="_blank">📄 Baca Whitepaper</a>
-    <a href="https://t.me/FreepalCoin1" target="_blank">📢 Telegram: @FreepalCoin1</a>
-    <a href="https://twitter.com/CoinFreepal" target="_blank">🐦 Twitter: @CoinFreepal</a>
-    <br><br>
-    <h3>Dompet Donasi untuk Palestina:</h3>
-    <p><code>0x1234567890abcdef1234567890abcdef12345678</code></p>
+    <p>Mata Uang Simbol Perjuangan Palestina</p>
+  </header>
+
+  <div class="content">
+    <p><strong>1 FPC = 1 USD</strong> (Target Jangka Panjang)</p>
+
+    <a href="whitepaper_freepal_coin.pdf" target="_blank" class="button">📄 Whitepaper (PDF)</a>
+    <a href="https://t.me/FreepalCoin1" target="_blank" class="button">📢 Telegram</a>
+    <a href="https://twitter.com/CoinFreepal" target="_blank" class="button">🐦 Twitter</a>
+
+    <div class="donation">
+      <h3>Dompet Donasi Palestina:</h3>
+      <code>0x1234567890abcdef1234567890abcdef12345678</code>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Freepal Coin (FPC) — Koin Kebebasan Palestina
+  </footer>
 </body>
 </html>
