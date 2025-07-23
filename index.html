@@ -138,7 +138,45 @@
 
   <h1>Freepal Coin (FPC)</h1>
   <p><strong>Koin kebebasan yang mendukung kemerdekaan Palestina dan masa depan finansial global yang inklusif.</strong></p>
+<button onclick="addFPC()" style="
+  background-color:#f6851b;
+  border:none;
+  color:white;
+  padding:10px 20px;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+">
+  🦊 Tambahkan FPC ke MetaMask
+</button>
 
+<script>
+  async function addFPC() {
+    try {
+      const wasAdded = await window.ethereum.request({
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address: '0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B', // kontrak FPC
+            symbol: 'FPC',
+            decimals: 18,
+            image: 'https://raw.githubusercontent.com/faktinya/freepal-token-logo/main/logo.png',
+          },
+        },
+      });
+
+      if (wasAdded) {
+        alert('FPC berhasil ditambahkan ke MetaMask!');
+      } else {
+        alert('FPC tidak ditambahkan.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Terjadi kesalahan saat menambahkan FPC.');
+    }
+  }
+</script>
   <h2>Harga Token Live</h2>
   <iframe src="https://dexscreener.com/polygon/0x9cfe18fac7c8d9fa4aa4c7872d1ba11f09aeb38b?embed=1&theme=dark" width="100%" height="300"></iframe>
 
