@@ -1,109 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freepal Coin (FPC)</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: white;
-      color: black;
+      padding: 0;
+      background-color: #ffffff;
+      color: #222;
     }
     header {
-      background: linear-gradient(to right, black, red, white, green);
+      background-color: #111;
+      padding: 1rem 2rem;
       color: white;
-      padding: 1rem;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    .container {
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: linear-gradient(to right, #000, #008000, #fff, #ff0000);
+      color: white;
+    }
+    .hero img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section {
       padding: 2rem;
       max-width: 800px;
       margin: auto;
     }
-    .logo {
-      max-width: 150px;
-      display: block;
-      margin: 1rem auto;
-      border-radius: 50%;
-    }
-    .section {
-      margin: 2rem 0;
-    }
-    a {
-      color: green;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .address-box {
-      background: #f4f4f4;
-      padding: 10px;
-      border: 1px solid #ccc;
-      word-break: break-all;
-      margin-top: 0.5rem;
-    }
     .button {
-      background-color: red;
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #e60000;
       color: white;
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
     }
-    .button:hover {
-      background-color: darkred;
+    .box {
+      background: #f9f9f9;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      word-wrap: break-word;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Freepal Coin (FPC)</h1>
-    <p>Koin kebebasan untuk Palestina 🇵🇸</p>
-  </header>
+    <h1>Freepal Coin</h1>
+    <nav>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#donasi">Donasi</a>
+      <a href="#sosial">Sosial</a>
+    </nav>
+  </header>  <section class="hero">
+    <img src="logo.png" alt="Logo Freepal Coin">
+    <h2>Koin Kebebasan Palestina</h2>
+    <p>Koin digital untuk mendukung kemerdekaan dan kebaikan.</p>
+    <a href="whitepaper_Freepal_Coin.pdf" class="button">Baca Whitepaper</a>
+  </section>  <section class="section" id="info">
+    <h3>Alamat Kontrak FPC</h3>
+    <div class="box" id="fpc-address">0x4551d27fCCDa6985bbb64n57b83b487c2d38fC9e5</div><h3 id="donasi">Alamat Donasi Palestina</h3>
+<div class="box" id="donasi-address">0x76388169eA77B8a63AD6933bf154b6095523f99C</div>
 
-  <div class="container">
-    <img src="logo.png" alt="Freepal Logo" class="logo" />
-
-    <div class="section">
-      <h2>📌 Alamat Kontrak Token</h2>
-      <div class="address-box">
-        <a href="https://polygonscan.com/token/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">
-          0x76388169eA77B8a63AD6933bf154b6095523f99C
-        </a>
-      </div>
+  </section>  <footer>
+    <h4 id="sosial">Temui Kami di Media Sosial</h4>
+    <div class="social">
+      <a href="https://t.me/FreepalCoin1" target="_blank">Telegram</a> |
+      <a href="https://twitter.com/CoinFreepal" target="_blank">Twitter</a>
     </div>
-
-    <div class="section">
-      <h2>🤲 Donasi untuk Palestina</h2>
-      <p>Kirim dukungan ke dompet resmi:</p>
-      <div class="address-box">
-        <a href="https://polygonscan.com/address/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">
-          0x76388169eA77B8a63AD6933bf154b6095523f99C
-        </a>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>📄 Whitepaper</h2>
-      <a href="whitepaper_freepal_coin.pdf" target="_blank">
-        <button class="button">📥 Download Whitepaper</button>
-      </a>
-    </div>
-
-    <div class="section">
-      <h2>🔗 Sosial Media</h2>
-      <ul>
-        <li>Twitter: <a href="https://twitter.com/CoinFreepal" target="_blank">@CoinFreepal</a></li>
-        <li>Telegram: <a href="https://t.me/FreepalCoin1" target="_blank">@FreepalCoin1</a></li>
-      </ul>
-    </div>
-  </div>
-
+    <p>&copy; 2025 Freepal Coin. All rights reserved.</p>
+  </footer>
 </body>
 </html>
