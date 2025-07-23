@@ -7,17 +7,26 @@
   <link rel="icon" href="favicon.png" />
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background-color: #111;
       color: #f5f5f5;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       padding: 2rem;
+      box-sizing: border-box;
+      text-align: center;
     }
+
     a {
       color: #00ffae;
       text-decoration: none;
       font-weight: bold;
     }
+
     .btn {
       background-color: #00ffae;
       color: #111;
@@ -27,19 +36,45 @@
       margin-top: 1rem;
       font-weight: bold;
       cursor: pointer;
+      display: inline-block;
     }
+
     .btn:hover {
       background-color: #00d29c;
     }
-    img.logo {
-      width: 100px;
-      height: auto;
+
+    code {
+      background: #222;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    h1, h2, p {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 120px;
       margin-bottom: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Freepal Coin Logo" class="logo" />
+  <img src="logo.png" alt="Freepal Coin Logo" />
 
   <h1>🚀 Freepal Coin (FPC)</h1>
   <p><strong>Koin kebebasan untuk mendukung Palestina dan masa depan finansial yang lebih adil.</strong></p>
@@ -54,24 +89,20 @@
   <h2>📄 Whitepaper</h2>
   <p>
     <a href="whitepaper_freepal_coin.pdf" target="_blank" class="btn">
-      Lihat Whitepaper (PDF)
+      Buka Whitepaper (PDF)
     </a>
   </p>
 
   <h2>🎯 Sosial Media</h2>
   <p>
-    Twitter: <a href="https://twitter.com/CoinFreepal" target="_blank">@CoinFreepal</a><br>
+    X: <a href="https://x.me.com/CoinFreepal" target="_blank">@CoinFreepal</a><br>
     Telegram: <a href="https://t.me/FreepalCoin1" target="_blank">@FreepalCoin1</a>
   </p>
 
   <h2>🤲 Dompet Donasi Palestina</h2>
-  <p>
-    <a href="https://polygonscan.com/address/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">
-      0x76388169eA77B8a63AD6933bf154b6095523f99C
-    </a>
-  </p>
+  <p><code>0x76388169eA77B8a63AD6933bf154b6095523f99C</code></p>
 
-  <footer style="margin-top: 4rem; font-size: 0.9rem; color: #aaa;">
+  <footer>
     &copy; 2025 Freepal Coin. All rights reserved.
   </footer>
 </body>
