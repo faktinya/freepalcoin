@@ -1,112 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="id"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freepal Coin (FPC)</title>
-  <link rel="icon" href="favicon.png" />
+  <meta name="description" content="Freepal Coin (FPC) - Koin kebebasan Palestina berbasis blockchain. Dukung perlawanan dan kebebasan dengan teknologi." />
+  <meta name="keywords" content="Freepal Coin, FPC, Palestina, Token Crypto, Polygon, Web3, Cryptocurrency" />
+  <meta property="og:title" content="Freepal Coin (FPC)" />
+  <meta property="og:description" content="Dukung perjuangan Palestina melalui teknologi dengan Freepal Coin (FPC)." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:url" content="https://faktinya.github.io/freepalcoin/" />
+  <title>Freepal Coin (FPC) - Koin Kebebasan Palestina</title>
+  <link rel="icon" href="logo.png" type="image/png" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
-      box-sizing: border-box;
+      background-color: #000;
+      color: #fff;
       text-align: center;
+      scroll-behavior: smooth;
     }
-
-    a {
-      color: #00ffae;
+    header {
+      background: linear-gradient(to right, #000000, #004d00);
+      padding: 20px;
+    }
+    header img {
+      width: 64px;
+      height: 64px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
-
-    .btn {
-      background-color: #00ffae;
-      color: #111;
-      padding: 0.6rem 1.2rem;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .cta {
+      font-size: 1.4em;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+    .button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 24px;
       border: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-      font-weight: bold;
+      border-radius: 8px;
+      font-size: 1em;
       cursor: pointer;
-      display: inline-block;
+      margin: 10px;
     }
-
-    .btn:hover {
-      background-color: #00d29c;
+    .roadmap table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 80%;
     }
-
-    code {
-      background: #222;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 0.5rem;
+    .roadmap th, .roadmap td {
+      border: 1px solid #ccc;
+      padding: 12px;
     }
-
     footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
+      background-color: #222;
+      padding: 20px;
+      font-size: 0.9em;
       color: #aaa;
     }
-
-    h1, h2, p {
-      margin: 1rem 0;
+    .address {
+      background: #111;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      word-break: break-all;
     }
-
-    img {
-      max-width: 120px;
-      margin-bottom: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
     }
   </style>
-</head>
-<body>
-  <img src="logo.png" alt="Freepal Coin Logo" />
-
-  <h1>🚀 Freepal Coin (FPC)</h1>
-  <p><strong>Koin kebebasan untuk mendukung Palestina dan masa depan finansial yang lebih adil.</strong></p>
-
-  <h2>🔗 Smart Contract</h2>
-  <p>
-    <a href="https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">
-      0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B
-    </a>
-  </p>
-
-  <h2>📄 Whitepaper</h2>
-  <p>
-    <a href="whitepaper_freepal_coin.pdf" target="_blank" class="btn">
-      Buka Whitepaper (PDF)
-    </a>
-  </p>
-
-  <h2>🎯 Sosial Media</h2>
-  <p>
-    X: <a href="https://twitter.com/CoinFreepal" target="_blank">@CoinFreepal</a><br>
-    Telegram: <a href="https://t.me/FreepalCoin1" target="_blank">@FreepalCoin1</a>
-  </p>
-
-  <h2>🤲 Dompet Donasi Palestina</h2>
-  <p>
-    <a href="https://polygonscan.com/address/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">
-      0x76388169eA77B8a63AD6933bf154b6095523f99C
-    </a>
-  <p>  
-  <footer>
-    &copy; 2025 Freepal Coin. All rights reserved.
+</head><body>
+  <header>
+    <img src="logo.png" alt="Freepal Coin Logo">
+    <h1>Freepal Coin (FPC)</h1>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#harga">Harga</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#beli">Beli</a>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#donasi">Donasi</a>
+    </nav>
+  </header>  <section id="tentang">
+    <h2>Tentang Freepal Coin</h2>
+    <p>Freepal Coin (FPC) adalah token crypto yang dibangun di jaringan Polygon dengan misi mendukung kebebasan Palestina secara teknologi dan ekonomi.</p>
+    <p class="address">Alamat Kontrak: <a href="https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">0x9CfE...b38B</a></p>
+  </section>  <section id="harga">
+    <h2>Harga Live</h2>
+    <iframe src="https://dexscreener.com/polygon/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B"></iframe>
+    <a class="button" href="https://dexscreener.com/polygon/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">Lihat Chart</a>
+  </section>  <section id="roadmap" class="roadmap">
+    <h2>Roadmap Freepal Coin</h2>
+    <table>
+      <tr><th>Kuartal</th><th>Target</th></tr>
+      <tr><td>Q3 2025</td><td>Rilis Whitepaper, Website, dan Launch di DEX</td></tr>
+      <tr><td>Q4 2025</td><td>Promosi Besar, 1000+ Holder, Verifikasi Token</td></tr>
+      <tr><td>Q1 2026</td><td>Listing CoinMarketCap & CoinGecko, Audit</td></tr>
+    </table>
+  </section>  <section id="beli">
+    <h2>Beli Freepal Coin</h2>
+    <p>Klik tombol di bawah ini untuk membeli FPC di QuickSwap.</p>
+    <a class="button" href="https://quickswap.exchange/#/swap?outputCurrency=0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">Beli Sekarang</a>
+  </section>  <section id="whitepaper">
+    <h2>Whitepaper</h2>
+    <p>Baca dokumen whitepaper lengkap kami di bawah ini:</p>
+    <iframe src="whitepaper_freepal_coin.pdf"></iframe>
+  </section>  <section id="donasi">
+    <h2>Donasi</h2>
+    <p>Dukung perjuangan dan pengembangan Freepal Coin dengan donasi langsung ke alamat berikut:</p>
+    <p class="address">0x76388169eA77B8a63AD6933bf154b6095523f99C</p>
+    <a class="button" href="https://polygonscan.com/address/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">Lihat di Polygonscan</a>
+  </section>  <footer>
+    <p>&copy; 2025 Freepal Coin. All rights reserved.</p>
+    <p>Email: faktinyaid@gmail.com</p>
   </footer>
-</body>
-</html>
+</body></html>
