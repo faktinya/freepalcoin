@@ -121,6 +121,37 @@
     }
   </script>
 </head>
+  <button onclick="addToken()" style="padding: 10px 20px; background: #00cc99; color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer;">
+  Tambahkan FPC ke MetaMask
+</button>
+
+<script>
+  async function addToken() {
+    try {
+      const wasAdded = await window.ethereum.request({
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address: '0x4551d27fCCDa6985bbb6457b83b487c2d38fC9e5', // Alamat kontrak FPC
+            symbol: 'FPC',
+            decimals: 18,
+            image: 'https://raw.githubusercontent.com/faktinya/freepal-token-logo/main/logo.png', // URL logo token
+          },
+        },
+      });
+
+      if (wasAdded) {
+        alert('Token FPC berhasil ditambahkan!');
+      } else {
+        alert('Token tidak ditambahkan.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Terjadi kesalahan saat menambahkan token.');
+    }
+  }
+</script>
 <body>
   <div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 9999;"></div>
 
