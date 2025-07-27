@@ -7,6 +7,37 @@
   <link rel="icon" href="favicon.png" />
  <style>
   body {
+.wallet-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.wallet-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.wallet-buttons a {
+  display: inline-block;
+  background-color: #00c897;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 130px;
+  text-align: center;
+  transition: background-color 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-buttons a:hover {
+  background-color: #009e73;
+  color: white;
+}
     margin: 0;
     font-family: Arial, sans-serif;
     background: #111;
@@ -149,6 +180,17 @@
   background-color: #00a86b;
   color: white;
 }
+    <section class="wallet-section">
+  <h2 style="font-size: 1.8rem;">Top-Up / Bayar<br>via e-Wallet</h2>
+  <div class="wallet-buttons">
+    <a href="https://link.dana.id/yourid" target="_blank">DANA</a>
+    <a href="https://www.gopay.co.id/qris" target="_blank">GoPay</a>
+    <a href="https://ovo.id/" target="_blank">OVO</a>
+    <a href="https://shopeepay.co.id/" target="_blank">ShopeePay</a>
+    <a href="https://ib.bri.co.id/ib-bri/" target="_blank">BRI Mobile</a>
+    <a href="https://ibank.bca.co.id/" target="_blank">BCA Mobile</a>
+  </div>
+</section>
 </style>
 
   <script>
