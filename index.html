@@ -122,9 +122,33 @@
   text-decoration: none;
   font-weight: bold;
   }
-.btn:hover {
+ .btn:hover {
   background: #218838;
   }
+ .wallet-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.wallet-buttons a {
+  background-color: #00d084;
+  color: black;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 120px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.wallet-buttons a:hover {
+  background-color: #00a86b;
+  color: white;
+}
 </style>
 
   <script>
